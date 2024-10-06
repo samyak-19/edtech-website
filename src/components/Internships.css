@@ -1,0 +1,81 @@
+
+.internships {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .internships h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2b2d42; 
+  }
+  
+  .internships ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px; 
+    padding: 0;
+  }
+  
+  .internships li {
+    background-color: #edf2f4; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .internships li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .internships li h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px; 
+    color: #2b2d42; 
+  }
+  
+  .internships li p {
+    font-size: 1rem;
+    color: #555; 
+    line-height: 1.6; 
+  }
+  
+  .internships li .internship-date {
+    font-size: 0.9rem;
+    color: #8d99ae; 
+    margin-bottom: 15px; 
+  }
+  
+  .internships li a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2b2d42; 
+    color: white; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .internships li a:hover {
+    background-color: #8d99ae; 
+  }
+  
+
+  .internships li {
+    margin-bottom: 30px; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .internships ul {
+      grid-template-columns: 1fr; 
+    }
+  }
+  

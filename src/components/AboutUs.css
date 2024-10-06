@@ -1,0 +1,96 @@
+
+.about-us {
+    padding: 80px 20px; 
+    background-color: #ffffff; 
+    text-align: center; 
+    position: relative; 
+    overflow: hidden;
+  }
+  
+
+  .about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(43, 45, 66, 0.1) 0%, rgba(43, 45, 66, 0.1) 50%, transparent 100%);
+    z-index: 1; 
+  }
+  
+
+  .about-us h2 {
+    font-size: 3rem; 
+    margin-bottom: 30px; 
+    color: #2b2d42; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    z-index: 2; 
+  }
+  
+  .about-us p {
+    font-size: 1.15rem; 
+    color: #444; 
+    line-height: 1.8; 
+    margin-bottom: 40px; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  
+
+  .about-us h3 {
+    font-size: 2rem; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    color: #2b2d42; 
+    position: relative; 
+  }
+  
+  
+  .about-us h3::after {
+    content: "";
+    display: block;
+    width: 50px; 
+    height: 4px; 
+    background-color: #2b2d42; 
+    margin: 10px auto; 
+    border-radius: 5px; 
+  }
+  
+ 
+  .about-us .mission,
+  .about-us .vision {
+    background-color: #edf2f4; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; 
+    transition: transform 0.3s, box-shadow 0.3;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  
+  .about-us .mission:hover,
+  .about-us .vision:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about-us h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-us h3 {
+      font-size: 1.8rem; 
+    }
+  
+    .about-us p {
+      font-size: 1rem; 
+    }
+  }
+  
